@@ -6,5 +6,3 @@
   tasks:
   - name: Querying for Telnet Install
     yum: pkg=telnet state=present update_cache=true
-    
-    
