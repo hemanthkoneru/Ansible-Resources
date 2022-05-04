@@ -1,5 +1,5 @@
 --- # Conditional Based PlayBook
--  hosts: webserver
+-  hosts: Webserver
    remote_user: centos
    become: yes
    become_method: sudo
