@@ -1,5 +1,5 @@
 --- # Installing Httpd Server and Starting it
--   hosts: Webserver
+-   hosts: webserver
     remote_user: centos
     become: yes
     become_method: sudo
