@@ -1,0 +1,13 @@
+--- # Conditional Based PlayBook
+-  hosts: Webserver
+   remote_user: centos
+   become: yes
+   become_method: sudo
+   connection: ssh
+   gather_facts: yes
+   tasks: 
+   - name: If Os is Ubuntu install apache2
+     yum:
+         name: apache2
+         state: present
+     when: ansible_os_family == 'Ubuntu'
