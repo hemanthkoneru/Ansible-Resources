@@ -1,5 +1,5 @@
 ---
-- hosts: centos
+- hosts: common
   become: yes  
   roles: 
     - install-apache
